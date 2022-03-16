@@ -1,0 +1,148 @@
+// Import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
+// Import Variables
+@import '_variables';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Cairo', sans-serif;
+}
+/* Navbar Style */
+nav.navbar {
+    z-index: 20;
+    .navbar-brand{
+        img{
+            width: 10%;
+        }
+    }
+    .navbar-toggler {
+        border: 0;
+        color: #16aeca !important;
+        &:focus{
+            box-shadow: 0;
+            border: 0;
+        }
+    }
+    .navbar-nav{
+        a.nav-link{
+            font-size: 16px;
+            color: #e8e8e8 !important;
+            padding: 0px 16px ;
+            line-height: 40px;
+            transition: all 0.5s ease;
+            
+        }
+        .nav-item{
+            a.nav-link{
+                &:focus,
+                &.active{
+                    background-color: #ffffff !important;
+                    color: #16aeca !important;
+                }
+            }
+        }
+    }
+    &.notransparent{
+        background-color: #fff;
+        border: 1px solid #eee;
+        .nav-item{
+            a.nav-link{
+                &:hover,
+                &.active{
+                    background-color: #16aeca !important;
+                    color: #dae413 !important;
+                }
+
+            }
+        }
+    }
+}
+
+/* End Navbar Style */
+
+/* Header Style */
+header {
+    background-image: url(../images/header.jpg);
+    background-size: cover;
+    background-position: center;
+    .overlay {
+        background: linear-gradient(to right, rgba(59,158,179,0.8), rgba(170,170,46,0.8));
+        min-height: 100vh;
+        .carousel .carousel-item {
+            position: relative;
+            min-height: 100vh;
+            .carousel-content {
+                position: absolute;
+                top: 40%;
+                left: 15%;
+                right: 15%;
+                line-height: 40%;
+                text-align: center;
+                z-index: 15;
+                h2 {
+                    color: #ffffff;
+                    font-size: 40px;
+                    padding-bottom: 55px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #ffffff;
+                    background-color: #16aeca;
+                    font-size: 18px;
+                    border-radius: 30px;
+                    padding: 5px 45px;
+                    transition: all 0.5s ease;
+                    &:hover {
+                        background-color: #dae413;
+                        color: #16aeca;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+/* End Header Style */
+/* Services Style */
+section.services {
+    padding: 85px 0;
+    min-height: 100vh;
+    .services-title h3 {
+        font-size: 40px;
+        color: #070c0c;
+        line-height: 40px;
+        margin-bottom: 50px;
+    }
+    .card {
+        height: 250px;
+        padding: 50px;
+        margin-bottom: 20px;
+        
+        .card-img {
+            padding: 15px 0;
+        }
+        .card-block p {
+            font-size: 15px;
+            line-height: 21px;
+            color: #919191;
+            padding: 15px 0;
+            opacity: 0;
+            
+        }
+        &:hover {
+            .card-block p {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/* End Services Style */
+
+
+
