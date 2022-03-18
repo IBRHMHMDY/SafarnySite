@@ -1,0 +1,9 @@
+header.header-turkey{
+    background-image: url(../images/BG-1.jpg);
+    background-size: cover;
+    background-position: center;
+    .overlay{
+        background: linear-gradient(to right, rgba(155, 59, 179, 0.8), rgba(249, 227, 255, 0.8));
+        min-height: 50%;
+    }
+}

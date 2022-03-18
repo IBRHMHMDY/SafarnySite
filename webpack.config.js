@@ -31,7 +31,7 @@ module.exports = {
       writeToDisk: true,
     },
     // compress: true,
-    port: 9000,
+    port: 2022,
     open: true,
     // livereload: false,
     hot: false,
@@ -89,6 +89,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: 'index.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/turkey.html',
+      filename: 'turkey.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].bundle.css',
