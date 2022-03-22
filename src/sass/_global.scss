@@ -1,6 +1,47 @@
-.main-title {
-    font-size: 40px;
-    color: #070c0c;
-    line-height: 40px;
-    margin-bottom: 50px;
+// Custom General
+.custom-btn-main{
+    padding: 20px;
+    background-color: $main-color !important;
+    color: #FFF;
+    font-weight: bold;
+    width: 250px;
+    &:hover{
+        color: #000;
+    }
 }
+.custom-btn{
+    padding: 10px 20px;
+    color: $main-color !important;
+    border: 2px solid $main-color !important;
+    font-weight: bold !important;
+    &:hover,&:focus{
+        background-color: $main-color;
+        color: $custom-color !important;
+        border: 2px solid $custom-color !important;
+    }
+}
+.custom-paragraph{
+    line-height: 2em;
+}
+.img-logo{
+    width: 80px;
+    height: 80px;
+    padding: 15px;
+}
+.custom-img{
+    border-radius: 10px;
+    margin: 20px;
+}
+.project-details{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.container-fluid{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+// End Custom General

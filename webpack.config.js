@@ -61,7 +61,7 @@ module.exports = {
       {
         test: /\.(jpe?g|png|gif)$/,
         use: {
-          loader: 'url-loader',
+          loader: 'file-loader',
           options:{
             name: '[name].[ext]',
             outputPath:'images',
@@ -73,7 +73,7 @@ module.exports = {
       {
         test: /\.(svg|eot|woff|woff2|ttf)$/,
         use: {
-          loader: 'url-loader',
+          loader: 'file-loader',
           options:{
             name: '[name].[ext]',
             outputPath:'fonts',
@@ -93,6 +93,18 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/turkey.html',
       filename: 'turkey.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/egypt.html',
+      filename: 'egypt.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/signin.html',
+      filename: 'signin.html',
+    }),
+    new HtmlWebpackPlugin({
+      template: './src/register.html',
+      filename: 'register.html',
     }),
     new MiniCssExtractPlugin({
       filename: 'css/[name].bundle.css',

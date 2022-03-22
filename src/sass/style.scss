@@ -1,78 +1,88 @@
-// Import Fonts
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap');
-// Import Components
 @import '_variables';
 @import '_global';
-@import '_turkey';
+@import './tours.scss';
+@import './accounts.scss';
+// @import './blog.scss';
+// @import './about.scss';
+// @import './contact.scss';
 
-*{
-    margin: 0;
-    padding: 0;
+
+// Fonts Define
+@font-face{
+    font-family: 'cairo-Fonts';
+    src: url('../fonts/Cairo-Regular.ttf');
 }
+
+// End Fonts Define
+
+.btn-primary{
+    background-color: $main-color;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    &:hover,&:focus{
+        background-color: #FFFFFF;
+        color: $main-color;
+        border-color: $main-color;
+        outline: none;
+    }
+}
+
+// Body Style
 body {
-    font-family: 'Cairo', sans-serif;
+    font-family: 'cairo-Fonts', Arial, Helvetica, sans-serif;
 }
-/* Navbar Style */
-nav.navbar {
-    z-index: 20;
-    .navbar-brand{
-        img{
-            width: 10%;
-        }
+
+
+// End Body
+.section-title{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    h3{
+        font-weight: bold;
+        color: $main-color;
     }
-    .navbar-toggler {
-        border: 0;
-        color: #16aeca !important;
-        &:focus{
-            box-shadow: 0;
-            border: 0;
-        }
-    }
-    .navbar-nav{
-        a.nav-link{
-            font-size: 16px;
-            color: #202020 !important;
-            padding: 0px 16px ;
-            line-height: 40px;
-            transition: all 0.5s ease;
-            
-        }
-        .nav-item{
-            a.nav-link{
-                &:focus,
-                &.active{
-                    background-color: #ffffff !important;
-                    color: #16aeca !important;
+}
+// Style Page: index.html 
+// Section: Top Menu
+.top-menu{
+    .navbar{
+        font-weight: bold;
+        padding: 0 100px !important;
+        background-color: #FFF !important;
+        .navbar-nav{
+            li > a{
+                transition-property: background-color;
+                transition-duration: .5s;
+                
+                &:hover{
+                    color: $main-color !important;
+                    background-color: $custom-color;
+                    border-bottom: 1px solid $main-color;
                 }
             }
+            .active a {
+                color: $main-color;
+                border-bottom: 1px solid $main-color;
+            }
         }
-    }
-    &.notransparent{
-        background-color: #cd28ff99;
-        border: 1px solid rgb(207, 207, 207);
-        .nav-item{
-            a.nav-link{
-                &:hover,
-                &.active{
-                    background-color: #16aeca !important;
-                    color: #ffffff !important;
-                }
+        .accounts{
 
+            .btn-link{
+                text-decoration: none;
+                direction: ltr;
             }
         }
     }
 }
-
-/* End Navbar Style */
-
-/* Header Style */
-header.header-main {
-    background-image: url(../images/header.jpg);
-    background-size: cover;
+// End Top Menu
+// Banner
+.banner-main{
+    background-image: url('../images/banner-6.jpg');
     background-position: center;
-    .overlay {
-        background: linear-gradient(to right, rgba(155, 59, 179, 0.8), rgba(249, 227, 255, 0.8));
-        min-height: 100vh;
+    background-size: cover;
+    .overlay{
+        background: rgba(24, 24, 24, 0.726);
+        height: 100vh;
         .carousel .carousel-item {
             position: relative;
             min-height: 100vh;
@@ -92,82 +102,163 @@ header.header-main {
                 a {
                     text-decoration: none;
                     color: #ffffff;
-                    background-color: #16aeca;
+                    background-color: $main-color;
                     font-size: 18px;
                     border-radius: 30px;
                     padding: 5px 45px;
                     transition: all 0.5s ease;
                     &:hover {
-                        background-color: #dae413;
-                        color: #16aeca;
+                        background-color: $main-color;
+                        color: #FFF;
                     }
                 }
+            }
+        }
+    }
+}
+// End banner
+// services
+.services{
+    height: 110vh;
+    padding-bottom: 10px;
+    
+    .card{
+        display: flex;
+        max-width: 500px;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border: 0;
+        .card-icon{
+            margin: 10px;
+            color: #000;
+            
+            &:hover{
+                color: $main-color;   
+            }
+        }
+        .card-body{
+            text-align: center;
+            h5{
+                font-size: 30px;
+                font-weight: bold;
+                line-height: 1.6;
+            }
+            p{
+                color: rgb(189, 189, 189);
+                font-size: 20px;
             }
             
         }
     }
-    
 }
+// End Services
+// Tours
+.tours{
+    height: 130vh;
+    background-color: #f1f1f1;
+    .card{
+        padding: 5px 0 5px 0;
+        img{
 
-/* End Header Style */
-/* Services Style */
-section.services {
-    padding: 60px 0 20px 0;
-    min-height: 100vh;
-    .card {
-        height: 250px;
-        padding: 50px;
-        margin-bottom: 20px;
-        
-        .card-img {
-            padding: 15px 0;
+            padding: 5px;
         }
-        .card-block p {
-            font-size: 15px;
-            line-height: 21px;
-            color: #919191;
-            padding: 15px 0;
-            opacity: 0;
+        h1{
+            font-weight: bold;
+            font-size: 30px;
+            padding: 10px 0 10px 0;
         }
-        &:hover {
-            .card-block p {
-                opacity: 1;
+        .price{
+            font-size: 25px;
+            padding: 10px 0 10px 0;
+            color: $main-color;
+        }
+        .custom-btn{
+            margin: 0 50px 10px 50px;
+        }
+    }
+}
+// End Tours
+// Call US
+.callus{
+    h4:hover{
+        color: $main-color;
+    }
+}
+// End Call US
+
+// Footer
+footer{
+    height: 80px;
+    background-color: #000;
+    padding: 22px 0;
+    margin-bottom: 0;
+    h5{
+        color: $main-color;
+        span{
+            color: $custom-color;
+            &:hover{
+                color: $main-color;
             }
         }
     }
 }
+// End Footer
 
-/* End Services Style */
 
-/* Tours Style*/
-section.tours{
-    background-color: #efeff0;
-    min-height: 100vh;
-
-    .tours{
-        padding: 60px 0 20px 0;
+@media(max-width:1120px){
+    .banner-main .overlay .carousel .carousel-item .carousel-content h2{
+        font-size: 30px;
     }
-    hr{
-        border: 1px solid #d1d1d1;
-        max-width: 100%;
-        margin: 10px;
+    .services .card .card-body p{
+        display: none;
     }
-    .btn{
-        margin: 10px;
+    .tours .card h1{
+        font-size: 20px;
     }
 }
+@media (max-width: 991px) {
+    // Style Page: index.html
+    .top-menu{
+        .navbar{
+            padding: 0px 20px !important;
 
-/* End Tours Style*/
-/* Contacts Style */ 
-section.contacts{
-    height: 100vh;
+            .navbar-nav{
+                a{
+                    border-bottom: none !important;
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
 
+    // End Style : index.html
 }
+@media(min-width: 767px){
+    
+    .carrousel-top{
+        .carousel{
+            .carousel-caption{
+                margin: 10px 20px;
+                h1{
+                    font-size: 20px;
+                }
+                h4{
+                    font-size: 10px;
+                }
+            }
+        }
 
-/* End Contacts Style */ 
-
-/* Footer style*/
-// footer.footer{
-
-// }
-/* End Footer style*/
+    }
+  
+    .services .card .card-icon{
+        margin: 0;
+        padding: 0;
+    }
+    .services .card .card-icon .fa-5x{
+        font-size: 50px;
+    }
+    .services .card .card-body h5{
+        font-size: 20px;
+    }
+}

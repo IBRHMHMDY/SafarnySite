@@ -1,0 +1,82 @@
+.turkey-tours{
+
+    #banner-img{
+        position: relative;
+        background-image: url(../images/BG-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 70%;
+        height: 250px;
+        .overlay{
+            position: absolute;
+            background-color: rgba(209, 77, 54, 0.623);
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                color: #ffffff;
+                font-size: 40px;
+            }
+        }
+    }
+    .tours-details,.gallery{
+        .title{
+            padding: 20px 0;
+            text-align: center;
+            color: $turkey-main-color;
+        }
+    
+    }
+}
+.gallery{
+    #image-gallery {
+        .modal-footer{
+            display: block;
+        }
+    }
+    .thumb{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+}
+
+
+.egypt-tours{
+
+    #banner-img{
+        position: relative;
+        background-image: url(../images/BG-2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 70%;
+        height: 250px;
+        .overlay{
+            position: absolute;
+            background-color: rgba(54, 57, 209, 0.425);
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                color: #ffffff;
+                font-size: 40px;
+            }
+        }
+    }
+    .tours-details,.gallery{
+        .title{
+            padding: 20px 0;
+            text-align: center;
+            color: $egypt-main-color;
+        }
+    
+    }
+}

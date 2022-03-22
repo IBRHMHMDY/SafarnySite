@@ -7,175 +7,223 @@
       <title>شركة سفرنى للسياحة</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-      <div class="container">
-        <a class="navbar-brand" href="#header"><img src="./images/logo.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#header">الرئيسية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#services">خدماتنا</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tours">الجولات السياحية</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#contacts">إتصل بنا</a>
-              </li>
-          </ul>
+    <!-- Container -->
+    <div class="container-fluid">
+      <!-- Top Menu -->
+      <section class="top-menu">
+        <div class="container">
+          <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light w-100">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              
+                <a class="navbar-brand p-0" href=".">
+                    <img src="images/logo.png" alt="SAFARNY" class="img-logo">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item p-2 active">
+                      <a class="nav-link" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="#services">خدماتنا</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="#tours">الجولات السياحية</a>
+                    </li>
+                    <li class="nav-item p-2">
+                      <a class="nav-link" href="#callus">تواصل معنا</a>
+                    </li>
+                  </ul>
+                  <div class="accounts ms-auto">
+                    <a href="signin.html" class="btn btn-primary">تسجيل الدخول</a>
+                    <a href="register.html" class="btn btn-primary mr-2">حساب جديد</a>
+                  </div>
+                </div>
+              </nav>
         </div>
-      </div>
-    </nav>
-    <!-- End Navbar -->
-    <!-- Header -->
-    <header class="header-main" id="header">
-      <div class="overlay">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousel-content">
-                <h2>الشركة السياحية الأفضل في الوطن العربي</h2>
-                <a href="#tours">الجولات السياحية</a>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="carousel-content">
-                <h2>لا تتردد بالتواصل معنا فنحن هنا لنساعدك على إيجاد كل ما تحتاج له هدفنا مساعدتك وتيسير أمورك</h2>
-                <a href="#services">خدماتنا</a>
-              </div>
-            </div>
-            <div class="carousel-item">
+        </div>
+      </section>
+      <!-- End Top Menu -->
+      <!-- Banner -->
+      <section class="banner-main" id="banner-main">
+        <div class="overlay">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
                 <div class="carousel-content">
-                  <h2>. إن كنت تبحث عن سكن أو جولة سياحية لتقضي أفضل الأوقات فقد وجدت طلبك</h2>
+                  <h2> الشركة السياحية الأفضل في الوطن العربي ، هدفنا مساعدتك وتيسير أمورك، لا تتردد بالتواصل معنا فنحن هنا لنساعدك على إيجاد كل ما تحتاج له.</h2>
+                  <a href="#services">خدماتنا</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-content">
+                  <h2>إن كنت تبحث عن سكن أو جولة سياحية لتقضي أفضل الأوقات فقد وجدت طلبك.</h2>
                   <a href="#contacts">تواصل معنا</a>
                 </div>
+              </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <i class="fas fa-angle-right fa-3x"></i>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <i class="fas fa-angle-left fa-3x"></i>
+            </button>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <i class="fas fa-angle-right fa-3x"></i>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <i class="fas fa-angle-left fa-3x"></i>
-          </button>
         </div>
-      </div>
-    </header>
-    <!-- End Header -->
-    <!-- Content Page -->
-    <main>
+      </section>
+      <!-- End Banner -->
+      
       <!-- Services Section -->
       <section class="services" id="services">
-        <div class="services-title text-center">
-          <h3 class="main-title">خدماتنا</h3>
+        <div class="section-title text-center">
+          <h3>خدماتنا</h3>
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-md-6">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <i class="fa fa-hotel fa-5x"></i>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">حجز سكن</h5>
-                      <p class="card-text">نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة الرائعة والقريبة من جميع الخدمات.</p>
-                    </div>
-                  </div>
+            <div class="col-md-6 col-sm-3">
+              <div class="card mb-3">                  
+                <div class="card-icon">
+                  <i class="fa fa-hotel fa-5x"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">حجز سكن</h5>
+                  <p class="card-text">نقدم لكم خدمة الحجوزات في أفضل الفنادق والشقق ذات الإطلالة الرائعة والقريبة من جميع الخدمات.</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <i class="fa fa-car fa-5x"></i>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">حجز سيارة</h5>
-                      <p class="card-text">نقدم لكم خدمة حجز السيارات سواءً سيارات الأوتوماتيك أو السيارات العادي</p>
-                    </div>
-                  </div>
+            <div class="col-md-6 col-sm-3">
+              <div class="card mb-3">
+                <div class="card-icon">
+                  <i class="fa fa-car fa-5x"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">حجز سيارة</h5>
+                  <p class="card-text">نقدم لكم خدمة حجز السيارات سواءً سيارات الأوتوماتيك أو السيارات العادي</p>                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-sm-3">
+              <div class="card mb-3">
+                <div class="card-icon">
+                  <i class="fas fa-map fa-5x"></i>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">جولات سياحية</h5>
+                  <p class="card-text">جولات سياحية خاصة مع أمهر السائقين كما نقدم جولات جماعية بأحدث الباصات مع أفضل المرشدين السياحيين الذين يُجيدون اللغة العربية والإنجليزية</p>
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <i class="fas fa-map fa-5x"></i>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">جولات سياحية</h5>
-                      <p class="card-text">جولات سياحية خاصة مع أمهر السائقين كما نقدم جولات جماعية بأحدث الباصات مع أفضل المرشدين السياحيين الذين يُجيدون اللغة العربية والإنجليزية</p>
-                    </div>
-                  </div>
+            <div class="col-md-6 col-sm-3">
+              <div class="card mb-3">
+                <div class="card-icon">
+                  <i class="fas fa-plane-arrival fa-5x"></i>
+                </div>               
+                <div class="card-body">
+                  <h5 class="card-title">الاستقبال من المطار</h5>
+                  <p class="card-text">نقدم لكم خدمة الاستقبال من المطار وتوديعكم في المطار بحيث يكون مندوبنا متواجد دائمًا في خدمتكم أثناء وصولكم أو ذهابكم للمطار مع أفضل وسائل النقل</p>
                 </div>
-              </div>
             </div>
-            <div class="col-md-6">
-              <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                  <div class="col-md-4">
-                    <i class="fas fa-plane-arrival fa-5x"></i>
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body">
-                      <h5 class="card-title">الاستقبال من المطار</h5>
-                      <p class="card-text">نقدم لكم خدمة الاستقبال من المطار وتوديعكم في المطار بحيث يكون مندوبنا متواجد دائمًا في خدمتكم أثناء وصولكم أو ذهابكم للمطار مع أفضل وسائل النقل</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </div>            
           </div>
         </div>
       </section>
-      <!-- End Services Section -->
-      <section class="tours" id="tours">
-      <div class="tours text-center">
-        <h3 class="main-title">الجولات السياحية</h3>
+      <!-- End Services -->
+      <!-- Tours Section -->
+     <section class="tours" id="tours">
+      <div class="section-title text-center">
+        <h3>الجولات السياحية</h3>
       </div>
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6">
             <div class="card text-center">
-              <img src="./images/BG-2.jpg" alt="EGYPT TOURS" style="width:100%">
+              <img src="images/BG-2.jpg" alt="EGYPT TOURS">
               <h1>رحلة إلى الأهرامات في مصر</h1>
               <hr>
-              <h4 class="price">250$</h4>
+              <h4 class="price">500$</h4>
               <hr>
-              <div class="btn btn-primary">عرض التفاصيل</div>
+              <a href="egypt.html" class="btn custom-btn">عرض التفاصيل</a>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-6">
             <div class="card text-center">
-              <img src="./images/BG-1.jpg" alt="TURKEY TOURS" style="width:100%">
+              <img src="images/BG-1.jpg" alt="TURKEY ">
               <h1>رحلة إلى مدينة إسطنبول في تركيا</h1>
               <hr>
-              <h4 class="price">100$</h4>
+              <h4 class="price">380$</h4>
               <hr>
-              <a href="turkey.html" class="btn btn-secondary">عرض التفاصيل</a>
+              <a href="turkey.html" class="btn custom-btn">عرض التفاصيل</a>
             </div>
           </div>
         </div>
       </div>
       </section>
-      <section class="contacts" id="contacts">
-        
+      <!-- End Tours Section -->
+      <!-- Call US -->
+      <section class="callus" id="callus">
+        <div class="section-title text-center">
+          <h3>تواصل معنا</h3>
+        </div>
+        <div class="container">
+          <div class="row pb-3">
+            <div class="col-md-6 pt-2">
+              <h4><i class="fa fa-phone"></i> 01142732683</h4>
+              <h4><i class="fa fa-map"></i> مصر ،القاهرة ، ميدان عابدين</h4>
+              <h4><i class="fa fa-envelope"></i> customers@safarny.com</h4>
+            </div>
+            <div class="col-md-6">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.8113507215558!2d31.24634995035743!3d30.042269581794166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840baf551f617%3A0xbafb145a268367fd!2sAbdeen%20Palace%20Museum!5e0!3m2!1sen!2seg!4v1647631150601!5m2!1sen!2seg" width="100%" height="auto" style="border:0;" allowfullscreen="false" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
       </section>
-    </main>
-    <!-- End Content Page -->
-    <footer class="footer">
-      
-    </footer>
+      <!-- End Call US -->
+      <!-- Footer -->
+      <footer class="footer">
+        <h5 class="copyright text-center mt-1">
+          جميع الحقوق محفوظة شركة <span>سفرنى</span> &copy; <span id="date"></span>
+        </h5>    
+      </footer>
+      <!-- End Footer -->
+    </div>
+    <!-- End container -->
+
+    </div> 
+    
+    <!-- <section class="login">
+      <div class="modal" tabindex="-1" id="login-page">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">تسجيل الدخول</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="wrapper">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                <div class="text-center mt-4 name"> تسجيل دخول </div>
+                <form class="p-3 mt-3">
+                    <div class="form-field d-flex align-items-center"> <span class="far fa-user"></span> <input type="text" name="userName" id="userName" placeholder="الإســــم"> </div>
+                    <div class="form-field d-flex align-items-center"> <span class="fas fa-key"></span> <input type="password" name="password" id="pwd" placeholder="كلمة المرور"> </div> <button class="btn mt-3">Login</button>
+                </form>
+                <div class="text-center fs-6"> <a href="#">هل نسيت كلمة المرور</a> or <a href="#">حساب جديد</a> </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary float-left" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary float-right">تسجيل دخول</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+
+
+
+
+
   </body>
 </html>

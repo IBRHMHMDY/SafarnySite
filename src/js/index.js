@@ -1,43 +1,89 @@
-import "@fortawesome/fontawesome-free/js/all";
-import "jquery/dist/jquery.min";
+import $ from 'jquery';
+window.jQuery = $;
+window.$ = $;
 import "popper.js/dist/popper.min";
 import "bootstrap/dist/js/bootstrap.min";
 import "bootstrap/dist/css/bootstrap.rtl.min.css";
 import "../sass/style.scss";
+import "@fortawesome/fontawesome-free/js/all";
 
 
 console.log('Safarny Company');
 
+$(function() {
+    // Gallery Tours
 
-function scrollMove(){
-    if(document.documentElement.scrollTop > 200) {
-        document.getElementById("navbar").classList.add("notransparent");
-    }else{
-        document.getElementById("navbar").classList.remove("notransparent");
-    }
-}
+    let modalId = $('#image-gallery');
 
-window.onscroll = function(){
-    scrollMove();
-};
 
-// Get the container element
-var navbar = document.getElementById("navbar");
+    loadGallery(true, 'a.thumbnail');
 
-// Get all buttons with class="btn" inside the container
-var links = navbar.getElementsByClassName("nav-link");
+    //This function disables buttons when needed
+    function disableButtons(counter_max, counter_current) {
 
-// Loop through the buttons and add the active class to the current/clicked button
-for (var i = 0; i < links.length; i++) {
-  links[i].addEventListener("click", function() {
-    var current = document.getElementsByClassName("active");
+        $('#show-previous-image, #show-next-image').show();
 
-    // If there's no active class
-    if (current.length > 0) {
-      current[0].className = current[0].className.replace(" active", "");
+        if (counter_max === counter_current) {
+
+            $('#show-next-image').hide();
+
+        } else if (counter_current === 1) {
+
+            $('#show-previous-image').hide();
+
+        }
     }
 
-    // Add the active class to the current/clicked button
-    this.className += " active";
-  });
-}
+    /**
+     *
+     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+     * @param setClickAttr  Sets the attribute for the click handler.
+     */
+
+    function loadGallery(setIDs, setClickAttr) {
+        let current_image,
+            selector,
+            counter = 0;
+
+        $('#show-next-image, #show-previous-image').on('click',function () {
+            if ($(this).attr('id') === 'show-previous-image') {
+                current_image--;
+            } else {
+                current_image++;
+            }
+
+            selector = $('[data-image-id="' + current_image + '"]');
+
+            updateGallery(selector);
+        });
+
+        function updateGallery(selector) {
+            let $sel = selector;
+            current_image = $sel.data('image-id');
+            $('#image-gallery-title').text($sel.data('title'));
+
+            $('#image-gallery-image').attr('src', $sel.data('image'));
+
+            disableButtons(counter, $sel.data('image-id'));
+        }
+
+        if (setIDs == true) {
+            $('[data-image-id]').each(function () {
+                counter++;
+                $(this).attr('data-image-id', counter);
+            });
+        }
+        $(setClickAttr)
+            .on('click', function () {
+            updateGallery($(this));
+        });
+    }
+
+
+    // End Gallery Tours
+
+// Set Current Date Function in Footer
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById('date').innerHTML = year;
+});
