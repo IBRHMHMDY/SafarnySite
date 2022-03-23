@@ -2,9 +2,6 @@
 @import '_global';
 @import './tours.scss';
 @import './accounts.scss';
-// @import './blog.scss';
-// @import './about.scss';
-// @import './contact.scss';
 
 
 // Fonts Define
@@ -14,18 +11,6 @@
 }
 
 // End Fonts Define
-
-.btn-primary{
-    background-color: $main-color;
-    color: #FFFFFF;
-    border-color: #FFFFFF;
-    &:hover,&:focus{
-        background-color: #FFFFFF;
-        color: $main-color;
-        border-color: $main-color;
-        outline: none;
-    }
-}
 
 // Body Style
 body {

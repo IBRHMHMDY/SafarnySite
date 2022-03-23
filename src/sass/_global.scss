@@ -32,16 +32,23 @@
     border-radius: 10px;
     margin: 20px;
 }
-.project-details{
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;  
-    overflow: hidden;
-}
+
 
 .container-fluid{
     padding-right: 0px !important;
     padding-left: 0px !important;
+}
+
+.btn-primary{
+    background-color: $main-color;
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    &:hover,&:focus{
+        background-color: #FFFFFF;
+        color: $main-color;
+        border-color: $main-color;
+        outline: none;
+    }
 }
 
 // End Custom General
