@@ -1,5 +1,5 @@
 // Extra Small Devices (Old Devices)
-@media(min-width:300px),(max-width:576px){
+@media(max-width:576px),(min-width:320px){
     // Top menu
     .navbar{
         padding: 0 20px !important;
@@ -25,19 +25,19 @@
     // End banner main
     // Services
     .services{
-        max-height: 250vh !important;
+        max-height: 270vh !important;
 
     }
     // End Services
     // Tours
     .tours{
-        max-height: 160vh !important;
+        max-height: 180vh !important;
         padding-bottom: 20px;
         .card{
             margin: 10px 20px;
             max-height: 95vh;
             h1{
-                font-size: 12px !important;
+                font-size: 16px !important;
             }
         }
     }
