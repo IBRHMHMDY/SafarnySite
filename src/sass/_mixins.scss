@@ -1,0 +1,44 @@
+
+
+@mixin colors-page($overlay-color,$title-color,$header-color,$point-color){
+    #banner-img{
+        position: relative;
+        background-image: url(../images/BG-1.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 100% 70%;
+        height: 250px;
+        .overlay{
+            position: absolute;
+            background-color: $overlay-color;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h1{
+                color: $title-color; //#FFF
+                font-size: 40px;
+            }
+        }
+    }
+    .tours-details{
+        ul{
+            li{
+                h3{
+                    color: $point-color;
+                }
+            }
+        }
+    }
+    .tours-details,.gallery{
+        .title{        
+            padding: 20px 0;
+            text-align: center;
+            color: $header-color; 
+        }
+    
+    }
+}

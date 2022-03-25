@@ -1,0 +1,202 @@
+// Extra Small Devices (Old Devices)
+@media(min-width:300px),(max-width:576px){
+    // Top menu
+    .navbar{
+        padding: 0 20px !important;
+        .accounts{
+            margin-bottom: 10px;
+            padding-top: 8px;
+        }
+    }
+    // End Top Menu
+    // Banner Main
+    .banner-main {
+        min-height: 50vh;
+        .overlay{
+            min-height: 50vh;
+            .carousel .carousel-item{
+                min-width: 50vh !important;
+                .carousel-content h2{
+                    font-size: 12px !important;
+                }
+            } 
+        }
+    }
+    // End banner main
+    // Services
+    .services{
+        max-height: 250vh !important;
+
+    }
+    // End Services
+    // Tours
+    .tours{
+        max-height: 160vh !important;
+        padding-bottom: 20px;
+        .card{
+            margin: 10px 20px;
+            max-height: 95vh;
+            h1{
+                font-size: 12px !important;
+            }
+        }
+    }
+    // End Tours
+    .callus .sm-pb{
+        padding-bottom: 10px;
+    }
+    // End Callus
+    // register
+    .register,.login{
+        max-width: 295px;
+        .btn-primary,
+        .btn-link{
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .btn-link{
+            margin-right: 0;
+            margin-top: 10px;
+        }
+    }
+    // End register
+
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { 
+    // Top menu
+    .navbar{
+        .accounts{
+            margin-bottom: 10px;
+            padding-top: 8px;
+        }
+    }
+    // End Top Menu
+    // Banner Main
+    .banner-main .overlay .carousel .carousel-item .carousel-content h2{
+        font-size: 22px !important;
+    }
+    // End banner main
+    // Services
+    .services{
+        max-height: 200vh !important;
+
+    }
+    // End Services
+    // Tours
+    .tours{
+        max-height: 160vh !important;
+        padding-bottom: 20px;
+        .card{
+            margin: 10px 20px;
+            max-height: 95vh;
+            h1{
+                font-size: 20px !important;
+            }
+        }
+    }
+    // End Tours
+    // Register & Login
+
+
+    .register,.login{
+        
+        max-width: 550px;
+        
+        min-height: 450px;
+        margin: 50px auto !important;
+
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+    // Top Menu
+    .navbar{
+        padding: 0px 60px!important;
+    }
+    // End Top Menu
+    // Banner Main
+    .banner-main .overlay .carousel .carousel-item .carousel-content h2{
+        font-size: 32px !important;
+    }
+    // End banner main
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+    // Tours
+    .tours{
+        .card{
+            max-height: 200vh;
+            h1{
+                font-size: 25px !important;
+            }
+        }
+    }
+    // End Tours
+
+
+
+
+
+
+ }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+        // Tours
+        .tours{
+            max-height: 200vh !important;
+            padding-bottom: 30px;
+            .card{
+                max-height: 200vh;
+            }
+        }
+        // End Tours
+ }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) { 
+    // Tours
+    .tours{
+        max-height: 200vh !important;
+        padding-bottom: 20px;
+        .card{
+            max-height: 200vh;
+        }
+    }
+    // End Tours
+ }
+
+
+ @media(max-width:767px){
+    .gallery{
+        .modal{
+            .modal-body{
+                img{
+                    width: 100% !important;
+                }
+            }
+        }
+    }
+    .banner{
+        .overlay{
+            h1{
+                font-size: 30px !important;
+            }
+        }
+    }
+ }
+
+ @media(max-width:400px){
+    .banner{
+        .overlay{
+            h1{
+                font-size: 20px !important;
+            }
+        }
+    }
+ }

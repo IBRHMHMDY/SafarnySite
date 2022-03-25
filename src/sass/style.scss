@@ -1,8 +1,11 @@
 @import '_variables';
 @import '_global';
+@import '_mixins';
+
 @import './tours.scss';
 @import './accounts.scss';
 
+@import '_media.scss';
 
 // Fonts Define
 @font-face{
@@ -27,12 +30,12 @@ body {
         color: $main-color;
     }
 }
-// Style Page: index.html 
+ 
 // Section: Top Menu
 .top-menu{
     .navbar{
         font-weight: bold;
-        padding: 0 100px !important;
+        padding: 0 100px;
         background-color: #FFF !important;
         .navbar-nav{
             li > a{
@@ -65,6 +68,7 @@ body {
     background-image: url('../images/banner-6.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     .overlay{
         background: rgba(24, 24, 24, 0.726);
         height: 100vh;
@@ -104,12 +108,12 @@ body {
 // End banner
 // services
 .services{
-    height: 110vh;
+    max-height: 130vh;
     padding-bottom: 10px;
     
     .card{
         display: flex;
-        max-width: 500px;
+        max-width: 130vh;
         justify-content: center;
         align-items: center;
         padding: 10px;
@@ -140,7 +144,7 @@ body {
 // End Services
 // Tours
 .tours{
-    height: 130vh;
+    max-height: 130vh;
     background-color: #f1f1f1;
     .card{
         padding: 5px 0 5px 0;
@@ -189,61 +193,3 @@ footer{
     }
 }
 // End Footer
-
-
-@media(max-width:1120px){
-    .banner-main .overlay .carousel .carousel-item .carousel-content h2{
-        font-size: 30px;
-    }
-    .services .card .card-body p{
-        display: none;
-    }
-    .tours .card h1{
-        font-size: 20px;
-    }
-}
-@media (max-width: 991px) {
-    // Style Page: index.html
-    .top-menu{
-        .navbar{
-            padding: 0px 20px !important;
-
-            .navbar-nav{
-                a{
-                    border-bottom: none !important;
-                    padding-right: 5px;
-                }
-            }
-        }
-    }
-
-    // End Style : index.html
-}
-@media(min-width: 767px){
-    
-    .carrousel-top{
-        .carousel{
-            .carousel-caption{
-                margin: 10px 20px;
-                h1{
-                    font-size: 20px;
-                }
-                h4{
-                    font-size: 10px;
-                }
-            }
-        }
-
-    }
-  
-    .services .card .card-icon{
-        margin: 0;
-        padding: 0;
-    }
-    .services .card .card-icon .fa-5x{
-        font-size: 50px;
-    }
-    .services .card .card-body h5{
-        font-size: 20px;
-    }
-}
